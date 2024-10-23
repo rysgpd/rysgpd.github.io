@@ -1,4 +1,4 @@
-name: "Yay internet!"
+name: "Website YML"
 output_dir: "."
 navbar:
   title: "Home"
@@ -8,9 +8,11 @@ navbar:
     - text: "Plots"
       href: plots.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<rs4338@cumc.columbia.edu>
     - icon: fa-github fa-lg
-      href: http://github.com/<rysgpd>/
+      href: https://github.com/rysgpd
+    - icon: fa-linkedin fa-lg
+      href: https://www.linkedin.com/in/rebeccashyu/
 output:
   html_document:
     theme: flatly
