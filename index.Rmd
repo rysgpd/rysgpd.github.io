@@ -13,7 +13,7 @@ output:
 
 Welcome to my website! Learn more about me and my work. 
 
-Check out my [professional experience](about.html) and some [example plots](plots.html) for P8105.
+Check out my [professional experience](about.html) and a [dashboard](dashboard.html) for P8105.
 
 
 
