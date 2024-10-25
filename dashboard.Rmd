@@ -50,24 +50,6 @@ Column {data-width=550}
 
 ```{r echo = FALSE}
 chelsea_rest %>% 
-  filter(critical_flag == "Critical") %>% 
-  count(violation_code, violation_description) %>% 
-  filter (n > 0) %>% 
-  mutate(violation_code = fct_reorder(violation_code, n)) %>% 
-  plot_ly(x = ~violation_code, y = ~n, color = ~violation_code, type = "bar", 
-          text = ~violation_description, colors = "viridis") %>% 
-    layout(title = "Number of Critical Violation Codes in Chelsea Restaurants",
-           xaxis = list(title = 'Violation Codes (with description)'), 
-           yaxis = list(title = 'Number of Instances (n)'))
-```
-
-Column {data-width=450}
------------------------------------------------------------------------
-
-### Chart B
-
-```{r echo = FALSE}
-chelsea_rest %>% 
   filter(cuisine_description=="CafÃ©/Coffee/Tea",
          !is.na(score)) %>% 
   distinct(dba, inspection_date, score) %>% 
@@ -79,6 +61,25 @@ chelsea_rest %>%
            title = "Distribution of Scores by Cafes in Chelsea",
            xaxis = list(title = 'Cafe'), 
            yaxis = list(title = 'Score'))
+
+```
+
+Column {.tabset data-width=450}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r echo = FALSE}
+chelsea_rest %>% 
+  filter(critical_flag == "Critical") %>% 
+  count(violation_code, violation_description) %>% 
+  filter (n > 0) %>% 
+  mutate(violation_code = fct_reorder(violation_code, n)) %>% 
+  plot_ly(x = ~violation_code, y = ~n, color = ~violation_code, type = "bar", 
+          text = ~violation_description, colors = "viridis") %>% 
+    layout(title = "Number of Critical Violation Codes in Chelsea Restaurants",
+           xaxis = list(title = 'Violation Codes (with description)'), 
+           yaxis = list(title = 'Number of Instances (n)'))
 ```
 
 ### Chart C
