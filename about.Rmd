@@ -10,10 +10,10 @@ output:
 
 I am a 3rd year PhD student in the [OPTACIMM Lab](https://www.dbmi.columbia.edu/optacimm/) at the Department of Biomedical Informatics at Columbia University. My undergraduate degree is from the University of Missouri (go Tigers!). My current research focuses on understanding healthcare processes surrounding maternal mortality and looks to improve healthcare quality. I received my MA in Biomedical Informatics in 2024.
 
-<figure>
+<div style="text-align: center;">
   <img src= "images/RossettiLab_5209.png" style = "width:50%" class = "center">
   <figcaption>OPTACIMM Lab Group Picture</figcaption>
-</figure>
+</div>
 
 
 # Education
@@ -40,7 +40,7 @@ Association 2024 Informatics Summit; Boston, MA.
   * Department of Biomedical Informatics, Columbia University, New York, NY
   * Instructor: Lena Mamykina
   
-* Acculturation to Programming and Statistics [Graduate], Teaching Assistant 
+* Acculturation to Programming and Statistics [Graduate], Lecturer; Teaching Assistant 
   * Fall 2023
   * Department of Biomedical Informatics, Columbia University, New York, NY
   * Instructor: Karthik Natarajan
@@ -64,7 +64,7 @@ Association 2024 Informatics Summit; Boston, MA.
   
 * Reviewer for Conferences and Awards
   * American Medical Informatics Association Informatics Summit (2024)
-  ∗ AMIA Informatics Summit Reviewer Award (2024)
+    * AMIA Informatics Summit Reviewer Award (2024)
   * American Medical Informatics Association Annual Conference (2021, 2023, 2024)
   * Mizzou Alumni Association’s Faculty Alumni Award (2021 Committee’s Student Representative)
 

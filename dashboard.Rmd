@@ -1,13 +1,12 @@
 ---
-title: "Plots"
+title: "Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
     vertical_layout: fill
 ---
 
-
-```{r setup, message=FALSE, include = FALSE}
+```{r setup, include=FALSE}
 library(tidyverse)
 library(p8105.datasets)
 
@@ -42,11 +41,9 @@ chelsea_rest =
   mutate(
     inspection_date = as.Date(inspection_date, format = '%Y-%m-%d')
   )
-
 ```
 
-
-Column {data-width=650}
+Column {data-width=550}
 -----------------------------------------------------------------------
 
 ### Chart A
@@ -64,7 +61,7 @@ chelsea_rest %>%
            yaxis = list(title = 'Number of Instances (n)'))
 ```
 
-Column {data-width=350}
+Column {data-width=450}
 -----------------------------------------------------------------------
 
 ### Chart B
@@ -106,3 +103,4 @@ chelsea_rest %>%
            xaxis = list(title = 'Date of Inspection'), 
            yaxis = list(title = 'Score'))
 ```
+
